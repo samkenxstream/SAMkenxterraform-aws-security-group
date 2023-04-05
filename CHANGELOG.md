@@ -2,6 +2,90 @@
 
 All notable changes to this project will be documented in this file.
 
+### [4.17.1](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.17.0...v4.17.1) (2023-01-13)
+
+
+### Bug Fixes
+
+* Fixed SG with prefix lists ([#271](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/271)) ([fdd67cd](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/fdd67cdd46bc472e8a0009589e129b1868cd0f2b))
+
+## [4.17.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.16.2...v4.17.0) (2023-01-13)
+
+
+### Features
+
+* Add rules for Promtail and Loki ([#277](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/277)) ([b0d41e2](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/b0d41e29277ca088d6580545e82c82d20bcf4a40))
+
+### [4.16.2](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.16.1...v4.16.2) (2022-11-17)
+
+
+### Bug Fixes
+
+* Fixed hcl2json call in update_groups.sh ([1e33b5f](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/1e33b5f2d9a57c017293bf57bf30f72be941a404))
+
+### [4.16.1](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.16.0...v4.16.1) (2022-11-14)
+
+
+### Bug Fixes
+
+* Update CI configuration files to use latest version ([#263](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/263)) ([bf115ff](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/bf115ff2fd33da35d16ea993fbd2a62efa4364e7))
+
+## [4.16.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.15.0...v4.16.0) (2022-10-25)
+
+
+### Features
+
+* Add a rule for prometheus node exporter on port 9100 ([#262](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/262)) ([ee913e4](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/ee913e48cbbbed14b97deb2b38188d97d1395f6b))
+
+## [4.15.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.14.0...v4.15.0) (2022-10-25)
+
+
+### Features
+
+* Added Vault rule ([#260](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/260)) ([5ae4f94](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/5ae4f9454ea099a092628139b055985eb087fe0b))
+
+## [4.14.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.13.1...v4.14.0) (2022-10-25)
+
+
+### Features
+
+* Added DAX Cluster rules ([#259](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/259)) ([0da7667](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/0da7667766bbf0aa02b2c087bc4c48ae2845a384))
+
+### [4.13.1](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.13.0...v4.13.1) (2022-09-26)
+
+
+### Bug Fixes
+
+* Fixed zabbix rules ([#261](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/261)) ([be7d46d](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/be7d46dc3f1124c400293e960f00814a42628579))
+
+## [4.13.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.12.0...v4.13.0) (2022-08-23)
+
+
+### Features
+
+* Add SASL/SCRAM and IAM access control TCP ports for Kafka / MSK ([#254](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/254)) ([c254255](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/c25425523e38284c5e454d1435510663db8dbff8))
+
+## [4.12.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.11.0...v4.12.0) (2022-08-22)
+
+
+### Features
+
+* Added Zabbix rules ([#255](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/255)) ([d29295c](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/d29295c97dfc4d8f07b5ee80d34b630c23cd79c9))
+
+## [4.11.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.10.0...v4.11.0) (2022-08-18)
+
+
+### Features
+
+* Add rules for Wazuh ([#243](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/243)) ([b23ca08](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/b23ca08653728b1645a9c96ee4adb5eb17839b70))
+
+## [4.10.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.9.0...v4.10.0) (2022-08-16)
+
+
+### Features
+
+* Add additional output security_group_arn ([#249](https://github.com/terraform-aws-modules/terraform-aws-security-group/issues/249)) ([44d8a25](https://github.com/terraform-aws-modules/terraform-aws-security-group/commit/44d8a25e2415c905824d0967621cfbd4311ed13d))
+
 ## [4.9.0](https://github.com/terraform-aws-modules/terraform-aws-security-group/compare/v4.8.0...v4.9.0) (2022-03-12)
 
 

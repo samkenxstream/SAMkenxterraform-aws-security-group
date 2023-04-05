@@ -19,7 +19,7 @@ All automatic values **prometheus module** is using are available [here](https:/
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.29 |
 
 ## Providers
 
@@ -45,7 +45,7 @@ No resources.
 | <a name="input_auto_computed_ingress_with_self"></a> [auto\_computed\_ingress\_with\_self](#input\_auto\_computed\_ingress\_with\_self) | List of maps defining computed ingress rules with self to add automatically | `list(map(string))` | `[]` | no |
 | <a name="input_auto_egress_rules"></a> [auto\_egress\_rules](#input\_auto\_egress\_rules) | List of egress rules to add automatically | `list(string)` | <pre>[<br>  "all-all"<br>]</pre> | no |
 | <a name="input_auto_egress_with_self"></a> [auto\_egress\_with\_self](#input\_auto\_egress\_with\_self) | List of maps defining egress rules with self to add automatically | `list(map(string))` | `[]` | no |
-| <a name="input_auto_ingress_rules"></a> [auto\_ingress\_rules](#input\_auto\_ingress\_rules) | List of ingress rules to add automatically | `list(string)` | <pre>[<br>  "prometheus-http-tcp",<br>  "prometheus-pushgateway-http-tcp"<br>]</pre> | no |
+| <a name="input_auto_ingress_rules"></a> [auto\_ingress\_rules](#input\_auto\_ingress\_rules) | List of ingress rules to add automatically | `list(string)` | <pre>[<br>  "prometheus-http-tcp",<br>  "prometheus-pushgateway-http-tcp",<br>  "prometheus-node-exporter-http-tcp"<br>]</pre> | no |
 | <a name="input_auto_ingress_with_self"></a> [auto\_ingress\_with\_self](#input\_auto\_ingress\_with\_self) | List of maps defining ingress rules with self to add automatically | `list(map(string))` | <pre>[<br>  {<br>    "rule": "all-all"<br>  }<br>]</pre> | no |
 | <a name="input_auto_number_of_computed_egress_rules"></a> [auto\_number\_of\_computed\_egress\_rules](#input\_auto\_number\_of\_computed\_egress\_rules) | Number of computed egress rules to create by name | `number` | `0` | no |
 | <a name="input_auto_number_of_computed_egress_with_self"></a> [auto\_number\_of\_computed\_egress\_with\_self](#input\_auto\_number\_of\_computed\_egress\_with\_self) | Number of computed egress rules to create where 'self' is defined | `number` | `0` | no |
@@ -111,6 +111,7 @@ No resources.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_security_group_arn"></a> [security\_group\_arn](#output\_security\_group\_arn) | The ARN of the security group |
 | <a name="output_security_group_description"></a> [security\_group\_description](#output\_security\_group\_description) | The description of the security group |
 | <a name="output_security_group_id"></a> [security\_group\_id](#output\_security\_group\_id) | The ID of the security group |
 | <a name="output_security_group_name"></a> [security\_group\_name](#output\_security\_group\_name) | The name of the security group |
